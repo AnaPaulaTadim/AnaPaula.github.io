@@ -175,13 +175,15 @@ a { color: var(--accent); }
 
 .hero-photo-wrap {
   justify-self: center;
+  width: min(100%, 320px);
 }
 
 .hero-photo {
-  width: 220px;
-  height: 220px;
+  display: block;
+  width: 100%;
+  height: 400px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 8px;
   border: 6px solid var(--card-bg);
   box-shadow: 0 0 0 1px var(--line);
 }
