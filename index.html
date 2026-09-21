@@ -1,36 +1,197 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Minha Primeira Página</title>
-</head>
-<body>
-    <h1>Olá, mundo!</h1>
-    <p>Meu nome é Ana Paula Tadim</p>
-    <p>Este é meu primeiro site 🎉</p>
-</body>
-</html>
-
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Sobre mim</title>
-</head> 
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Paula Tadim — Portfólio</title>
+<meta name="description" content="Página pessoal de Ana Paula dos Santos Tadim, estudante de computação na UFOP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1>Sobre mim</h1>
 
-    <img src="https://github.com/AnaPaulaTadim.png" 
-         alt="Foto de perfil" 
-         width="200" 
-         style="border-radius: 50%;">
+  <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <div class="nav-left">
+        <a class="brand" href="#topo">Página Pessoal</a>
+      </div>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="#topo">Home</a>
+        <a class="btn btn-primary" href="#sobre">Sobre mim</a>
+        <a class="btn btn-primary" href="#projetos">Projetos</a>
+        <a class="btn btn-primary" href="#experiencia">Experiências</a>
+        <a class="btn btn-primary" href="#contato">Entrar em contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="topo" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Ana Paula dos Santos Tadim</h1>
+          <p class="eyebrow-free">Ouro Preto, MG · UFOP</p>
+          <p class="hero-role">Estudante de graduação em Ciência da Computação</p>
+          <p class="hero-desc"> Gosto de aprender coisas novas, estar sempre me desenvolvendo e aproveitar as oportunidades para evoluir profissionalmente. Acredito que a Computação oferece um grande leque de possibilidades e permite uma forte interdisciplinaridade com outras áreas. Estar na faculdade também tem sido uma oportunidade de conhecer pessoas incríveis, entre amigos e professores, criar vínculos e compartilhar experiências que vão além da sala de aula. E, fora da universidade, acredito que um café, uma cervejinha e uma boa pinga também fazem bem para a alma!😅</p>
+        </div>
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="https://github.com/AnaPaulaTadim.png" alt="Foto de perfil de Ana Paula">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="section-inner">
+        <h2>Sobre mim</h2>
+        <div class="sobre-grid">
+          <div class="sobre-text">
+            <p>Sou estudante de graduação em Ciência da Computação na Universidade Federal de Ouro Preto (UFOP), com início no segundo semestre de 2023. Ao longo da graduação, participei de projetos de extensão voltados ao ensino de programação para meninas em idade escolar, incluindo o desenvolvimento de materiais didáticos. Também atuei em um projeto de Iniciação Científica focado na análise da diversidade de gênero entre pesquisadores da UFOP, no qual tive a oportunidade de aprofundar meus conhecimentos em Python, trabalhar com APIs de bases de dados como OpenAlex e Genderize, além de utilizar bibliotecas de Processamento de Linguagem Natural, como a NLTK.</p>
+            <p>Ao longo do curso, desenvolvi diversos projetos práticos utilizando <strong>C/C++</strong>, <strong>Java</strong>, <strong>Python</strong>, <strong>Haskell</strong>, <strong>SQL</strong> e <strong>GitHub</strong>. Em Python, desenvolvi soluções para análise e processamento de dados e implementei modelos de aprendizado de máquina, realizando seu treinamento e avaliação em tarefas de classificação e previsão sobre diferentes conjuntos de dados. Essas experiências contribuíram para o desenvolvimento de habilidades em manipulação de dados, implementação de algoritmos e resolução de problemas por meio de técnicas de Inteligência Artificial.</p>
+            <p>Sou comunicativa e focada, e busco constantemente aprimorar minhas habilidades técnicas e sociais para me desenvolver profissionalmente e construir minha trajetória na área de TI.</p>
+
+          </div>
+          <div class="sobre-side">
+            <div class="info-block">
+              <h3>Competências</h3>
+              <ul class="pill-list">
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>PyTorch/PyVista</li>
+                <li>Haskell</li>
+                <li>Java/JavaScript</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="info-block">
+              <h3>Lazer/Costumes</h3>
+              <ul class="pill-list">
+                <li>Sonequinha pós-almoço</li>
+                <li>Filmes</li>
+                <li>Animes</li>
+                <li>Jogos</li>
+                <li>Viajar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="section-inner">
+        <h2>Projetos</h2>
+        <div class="projects">
+
+          <article class="project">
+            <div class="project-marker" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>🧬 Modelagem e Simulação de Árvores Vasculares (CCO & TRICCO)</h3>
+              <p class="project-tags">
+                <span>C++</span><span>PyVista</span><span>Simulação física</span>
+              </p>
+              <p>Implementação do algoritmo Constrained Constructive Optimization (CCO) para construção de árvores vasculares artificiais e sua extensão TRICCO (TRIfurcating CCO). O projeto combina modelagem geométrica , otimização construtiva e modelagem hemodinâmica , permitindo gerar, analisar e visualizar árvores vasculares sintéticas em um domínio tridimensional.</p>
+              <a class="project-link" href="https://github.com/AnaPaulaTadim/algoritmos-e-programacao-avancada.git">Ver repositório no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-marker" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>🌿Classificação Few-Shot de Doenças em Plantas via Fusão de Características Global-Local</h3>
+              <p class="project-tags">
+                <span>Python</span><span>PyTorch</span><span>Jupyter</span>
+              </p>
+              <p>Este projeto implementa uma abordagem de Few-Shot Learning (FSL) para classificação de doenças em folhas de plantas, baseada na fusão de características globais e locais com mecanismo de autoatenção.A proposta é investigar como um modelo pode realizar a classificação de diferentes doenças utilizando apenas uma pequena quantidade de imagens de referência, reduzindo a necessidade de grandes conjuntos de dados específicos para cada nova classe.</p>
+              <a class="project-link" href="https://github.com/AnaPaulaTadim/Processamento-de-Imagens.git">Ver repositório no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-marker" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>🧩 Resolução do Nonograma usando algoritmos de IA</h3>
+              <p class="project-tags"><span>IA</span><span>Backtracking</span><span>Algoritmo Genético</span><span>Modelo híbrido(Backtracking + Algo.Genético)</span></p>
+              <p>Este projeto apresenta a implementação de um solucionador de Nonogramas, um jogo de lógica em que o objetivo é preencher uma nota de acordo com sequências numéricas fornecidas para cada linha e coluna. Essas sequências indicam a quantidade e a ordem dos blocos consecutivos de células que devem ser necessários. O objetivo foi aplicar diferentes estratégias de busca e otimização para resolver o problema de forma automatizada.</p>
+              <a class="project-link" href="https://github.com/AnaPaulaTadim/Trabalho-Pratico-Inteligencia-Artificial.git">Ver repositório no GitHub →</a>            
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section section-alt">
+      <div class="section-inner">
+        <h2>Experiência</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Em andamento</p>
+              <h3>Graduação em Computação — UFOP</h3>
+              <p>Formação prevista para conclusão em [2027]</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">[Concluído]</p>
+              <h3>Iniciação Científica - Análise da diversidade de gênero entre pesquisadores de programas de pós-graduação brasileiros </h3>
+              <p>Projeto de Iniciação Científica voltado à análise da diversidade de gênero na pesquisa científica. Foram desenvolvidos scripts em Python para coleta e processamento de dados da API OpenAlex, utilizando técnicas de NLP, NLTK e a API Genderize, além de análises quantitativas e visualizações dos dados.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">[Concluído]</p>
+              <h3>Extensionista — Projeto Código X </h3>
+              <p>Projeto de Iniciação Científica voltado à análise da diversidade de gênero na pesquisa científica. Foram desenvolvidos scripts em Python para coleta e processamento de dados da API OpenAlex, utilizando técnicas de NLP, NLTK e a API Genderize, além de análises quantitativas e visualizações dos dadosProjeto desenvolvido em parceria com a ONG Código X, voltada à introdução de meninas em idade escolar à área de tecnologia. Atuação na elaboração de material didático em formato de aplicativo mobile, desenvolvido para ensinar conceitos básicos de informática e programação de forma acessível e introdutória, com o objetivo de incentivar o interesse de meninas pela tecnologia desde a idade escolar.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
 
-    <h2>Meus interesses</h2>
-    <ul>
-        <li>Programação</li>
-        <li>Filmes</li>
-        <li>Jogos</li>
-    </ul>
+    <section id="contato" class="section section-alt">
+      <div class="section-inner">
+        <h2> Informações de Contato:</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <a href="mailto:anapaulatadim2003@gmail.com">anapaulatadim2003@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-icon github-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" aria-label="GitHub">
+                <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.72c-2.78.62-3.37-1.22-3.37-1.22-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.58 2.35 1.12 2.92.85.09-.66.35-1.12.64-1.38-2.22-.26-4.55-1.14-4.55-5.06 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.16 9.16 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.76 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+              </svg>
+            </span>
+            <a href="https://github.com/AnaPaulaTadim" target="_blank" rel="noopener">github.com/anapaulatadim </a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">in</span>
+            <a href="https://linkedin.com/in/ana-paula-tadim" target="_blank" rel="noopener"> linkedin.com/in/ana-paula-tadim</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">☎</span>
+            <a href="tel:+5500000000000">(33) 99985-5226</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Ana Paula dos Santos Tadim</p>
+  </footer>
+
+
 </body>
-
+</html>
